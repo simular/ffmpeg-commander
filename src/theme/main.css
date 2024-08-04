@@ -8,3 +8,7 @@
   height: 75px;
   padding: 5px;
 }
+
+.bg-dark {
+  background-color: #333 !important;
+}
