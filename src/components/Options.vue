@@ -33,22 +33,22 @@
     </b-form-row>
     <hr />
 
-    <b-form-row>
-      <b-col>
-        <b-form-group label="FFmpegd:">
-          <b-form-checkbox
-            v-model="ffmpegd"
-            @input="update('ffmpegd', $event)"
-            switch
-          >
-            <span class="desc">
-              Enable sending encode jobs to <code>ffmpegd</code> (experimental).
-              <p class="small text-muted">*<strong>ffmpegd</strong> must be running to connect.</p>
-            </span>
-          </b-form-checkbox>
-        </b-form-group>
-      </b-col>
-    </b-form-row>
+    <!--<b-form-row>-->
+    <!--  <b-col>-->
+    <!--    <b-form-group label="FFmpegd:">-->
+    <!--      <b-form-checkbox-->
+    <!--        v-model="ffmpegd"-->
+    <!--        @input="update('ffmpegd', $event)"-->
+    <!--        switch-->
+    <!--      >-->
+    <!--        <span class="desc">-->
+    <!--          Enable sending encode jobs to <code>ffmpegd</code> (experimental).-->
+    <!--          <p class="small text-muted">*<strong>ffmpegd</strong> must be running to connect.</p>-->
+    <!--        </span>-->
+    <!--      </b-form-checkbox>-->
+    <!--    </b-form-group>-->
+    <!--  </b-col>-->
+    <!--</b-form-row>-->
     <p>⚠️ Options will be saved to Local Storage for convenience.</p>
   </div>
 </template>

@@ -11,6 +11,7 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'off' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'max-len': 'off',
     'vue/multi-word-component-names': 'off',
     'vue/no-mutating-props': 'off',
     'vuejs-accessibility/media-has-caption': 'off',

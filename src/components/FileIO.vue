@@ -3,7 +3,7 @@
     <b-form-row>
       <!-- Input -->
       <b-col>
-        <b-form-group label="Input:" label-for="input">
+        <b-form-group label="輸入檔案:" label-for="input">
           <b-input-group>
             <b-form-select
               v-if="!$store.state.ffmpegdEnabled || !$store.state.wsConnected"
@@ -39,7 +39,7 @@
 
       <!-- Output -->
       <b-col>
-        <b-form-group label="Output:" label-for="output">
+        <b-form-group label="輸出檔案:" label-for="output">
           <b-input-group>
             <b-form-select
               v-if="!$store.state.ffmpegdEnabled"

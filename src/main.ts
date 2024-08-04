@@ -7,6 +7,7 @@ import store from './store';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
+import './theme/main.css';
 
 Vue.prototype.$store = store;
 Vue.prototype.$ws = ws;

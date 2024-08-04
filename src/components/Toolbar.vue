@@ -12,11 +12,11 @@
       <b-dropdown
         variant="outline-primary"
         split
-        :text="copied ? 'Copied' : 'Copy'"
-        v-b-tooltip.hover.bottom title="Copy to your Clipboard"
+        :text="copied ? '已複製' : '複製'"
+        v-b-tooltip.hover.bottom title="複製到剪貼簿"
         @click="copyToClipboard">
         <b-dropdown-item @click="toggleJSON">
-          {{ value.showJSON ? 'Hide' : 'Show' }} JSON
+          {{ value.showJSON ? '隱藏' : '顯示' }} JSON
         </b-dropdown-item>
       </b-dropdown>
     </b-button-group>
@@ -25,24 +25,24 @@
       <b-button
         class="ml-2 float-right"
         variant="outline-danger"
-        @click="$emit('reset')">Reset
+        @click="$emit('reset')">重置
       </b-button>
 
       <b-dropdown
         variant="outline-primary"
         split
-        v-b-tooltip.hover.bottomright title="Save to Local Storage"
-        :text="saving ? 'Saving...' : 'Save'" @click="save"
+        v-b-tooltip.hover.bottomright title="儲存至 Local Storage"
+        :text="saving ? '儲存中...' : '儲存'" @click="save"
       >
         <b-dropdown-item @click="$emit('save', true)">
-          Save New
+          儲存成新的
         </b-dropdown-item>
         <b-dropdown-item v-if="preset.name" @click="deletePreset">
-          Delete Preset
+          刪除設定擋
         </b-dropdown-item>
         <b-dropdown-divider></b-dropdown-divider>
         <b-dropdown-item @click="deleteAllPresetsPrompt">
-          Delete All Saved Presets
+          刪除所有已儲存設定擋
         </b-dropdown-item>
       </b-dropdown>
     </b-button-group>
@@ -52,10 +52,10 @@
   <b-overlay :show="showDeletePrompt" no-wrap @shown="onShown">
     <template v-slot:overlay>
     <div ref="dialog" class="text-center p-3">
-      <p>Are you sure you want to delete all saved presets?</p>
+      <p>您確定要刪除所有設定擋?</p>
       <div>
         <b-button class="mr-3" @click="onCancel">Cancel</b-button>
-        <b-button variant="outline-danger" @click="onOK">Delete All Saved Presets</b-button>
+        <b-button variant="outline-danger" @click="onOK">刪除所有設定擋</b-button>
       </div>
     </div>
     </template>

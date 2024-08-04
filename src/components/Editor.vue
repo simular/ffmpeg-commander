@@ -11,23 +11,23 @@
     <!-- Tabs for each command building component.
     Format, Video, Audio, Filters and Options -->
     <b-tabs class="mt-4">
-      <b-tab title="Format" class="mt-2">
+      <b-tab title="格式" class="mt-2">
         <Format v-model="form.format" />
       </b-tab>
 
-      <b-tab title="Video" class="mt-2">
+      <b-tab title="影像" class="mt-2">
         <Video :container="form.format.container" v-model="form.video" />
       </b-tab>
 
-      <b-tab title="Audio" class="mt-2">
+      <b-tab title="音訊" class="mt-2">
         <Audio :container="form.format.container" v-model="form.audio" />
       </b-tab>
 
-      <b-tab title="Filters" class="mt-2">
+      <b-tab title="過濾器 (Filters)" class="mt-2">
         <Filters v-model="form.filters" />
       </b-tab>
 
-      <b-tab title="Options" class="mt-2">
+      <b-tab title="選項" class="mt-2">
         <Options v-model="form.options" />
       </b-tab>
     </b-tabs>
@@ -36,8 +36,8 @@
     <!-- FFmpeg generated command output with tooltips. -->
     <Command :cmd="cmd" />
     <p class="disclaimer">
-      *Generated options may vary based on your FFmpeg version and build configuration.
-      Tested on version 4.3.1.</p>
+      *產生的選項可能會根據您的 FFmpeg 版本和配置而有所不同。
+      目前已測試版本 4.3.1.</p>
 
     <!-- Hidden textarea so we can use the browser copy function. -->
     <div class="hidden-cmd">

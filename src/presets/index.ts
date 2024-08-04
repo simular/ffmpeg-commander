@@ -14,7 +14,7 @@ interface IPresetOption {
 const presetOptions = [
   {
     id: 'general',
-    name: 'General',
+    name: '基本',
     data: [
       { name: 'H264 Very Fast 1080p30', value: 'h264-very-fast-1080p30' },
       { name: 'H264 Very Fast 720p30', value: 'h264-very-fast-720p30' },
@@ -32,14 +32,14 @@ const presetOptions = [
   },
   {
     id: 'custom',
-    name: 'Custom',
+    name: '自訂',
     data: [
       { name: 'Custom', value: 'custom' },
     ],
   },
   {
     id: 'saved',
-    name: 'Saved (Local Storage)',
+    name: '已儲存 (Local Storage)',
     data: [],
   },
 ];

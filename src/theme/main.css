@@ -1,0 +1,10 @@
+.c-flat-logo {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  background-color: #333;
+  border-radius: 300px;
+  width: 75px;
+  height: 75px;
+  padding: 5px;
+}

@@ -2,7 +2,7 @@
   <div>
     <b-form-row>
       <b-col>
-        <b-form-group label="Container:" label-for="container">
+        <b-form-group label="容器:" label-for="container">
           <b-form-select
             class="u-full-width"
             :value="value.container"
@@ -23,7 +23,7 @@
             v-bind:value="value.clip"
             @input="update('clip', $event)"
           >
-            <option :value="null" disabled>-- Please select an option --</option>
+            <option :value="null" disabled>-- 請選擇 --</option>
             <option v-for="o in clip" :key="o.id" :value="o.value">{{o.name}}</option>
           </b-form-select>
         </b-form-group>

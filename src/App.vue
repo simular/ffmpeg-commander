@@ -25,7 +25,7 @@ App
         <b-navbar-nav>
           <b-nav-item href="#">
             <img src="../public/ffmpeg.svg" height="25" width="25" alt="FFmpeg Commander" />
-            FFmpeg Commander
+            FFmpeg 指令產生器
           </b-nav-item>
         </b-navbar-nav>
       </div>
@@ -35,7 +35,7 @@ App
 
     <div id="app" class="container">
       <b-tabs align="right" content-class="mt-4" v-model="tabIndex">
-        <b-tab title="Builder">
+        <b-tab title="指令產生器">
           <router-view @onEncode="onEncode" />
         </b-tab>
         <b-tab title="Queue" v-if="ffmpegdEnabled">
@@ -58,9 +58,12 @@ App
       <div class="text-muted">
         <ul>
           <li>{{ name }}-{{ version }}</li>
-          <li><a href="https://github.com/alfg/ffmpeg-commander/issues">Report a Bug</a></li>
-          <li><a href="https://ffmpeg.org/ffmpeg.html">FFmpeg Documentation</a></li>
-          <li class="float-right">Built with ❤ by <a href="https://github.com/alfg">alfg</a></li>
+          <li><a href="https://ffmpeg.org/ffmpeg.html">FFmpeg 官方文件</a></li>
+          <li class="float-right">
+            原作者 <a href="https://github.com/alfg/ffmpeg-commander" target="_blank">alfg</a>
+            -
+            中文版由 <a href="https://simular.co" target="_blank">夏木樂</a> 提供
+          </li>
         </ul>
       </div>
     </footer>
