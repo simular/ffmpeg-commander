@@ -2,7 +2,7 @@
   <div class="presets">
     <b-form-row>
       <b-col cols="6">
-        <b-form-group label="預定義: " label-for="preset">
+        <b-form-group label="預定義設定擋: " label-for="preset">
           <b-form-select
             class="u-full-width"
             v-model="id"
